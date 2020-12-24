@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '_!1q=)v8)^=_w)@ng7^a6p$k9&!pq)0oz*r^18xyq!yzf+8fs7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://air-quality-pollutants.herokuapp.com/','127.0.0.1']
 
 
 # Application definition
