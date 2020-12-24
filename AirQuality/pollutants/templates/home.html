@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-3">
+<h1>Below is the pollutants readings in Gurugram</h1>
+<br>
+<table class="table table-bordered">
+    <tr class="table-primary">
+    {% for i in poll_name %}
+    <th>{{i}}</th>
+ {% endfor %}
+    </tr>
+    <tr class="table-light">
+    {% for j in poll_value %}
+    <td>{{j}} μg/m³</td>
+    {% endfor %}
+</tr>
+
+</table>
+   </div>
+{% endblock %}
